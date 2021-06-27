@@ -1,0 +1,67 @@
+body {
+    background: linear-gradient(yellow, rgb(65, 75, 8), yellow);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.unpainted-block {
+    background-color: rgb(0, 0, 0);
+}
+
+.painted-block {
+    animation: rainbow 5s infinite;
+}
+
+#reset {
+    margin-top: 1vw;
+    background-color: rgba(190, 199, 71, 0.5);
+    width: 100px;
+    color: rgb(4, 20, 73);
+}
+
+@keyframes rainbow {
+    0% {
+        background-color:red;
+    }
+    15% {
+        background-color: orange
+    }
+    30% {
+        background-color: yellow;
+    }
+    45% {
+        background-color: green;
+    }
+    60% {
+        background-color: blue;
+    }
+    75% {
+        background-color:indigo;
+    }
+    90% {
+        background-color: violet
+    }
+    100% {
+        background-color: red;
+    }
+}
+
+
+
+#canv {
+    margin-top: 5vw;
+    width: 70vmin;
+    height: 70vmin;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+p {
+    font-size: 5em;
+    background: -webkit-linear-gradient(red, orange, #414704, green, blue, indigo, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
